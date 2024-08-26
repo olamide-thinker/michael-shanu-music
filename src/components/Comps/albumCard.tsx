@@ -13,8 +13,8 @@ const AlbumCard = ({tracks, album_name, album_brief, album_coverImg}:{tracks:str
   return (
     
 <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
-<div  className=' p-2 bg-white sm:min-w-[600px] min-w-[350px] rounded-[50px]'>
-    <div className=' hover:bg-black/5  flex flex-col text-black  sm:flex-row gap-2 p-2 bg-white relative rounded-[40px]'>
+<div  className=' p-2 bg-white sm:min-w-[600px] min-w-[350px] rounded-[50px] m-1'>
+    <div className=' hover:bg-black/5  flex flex-col text-black  sm:flex-row gap-2 smp-2 bg-white relative rounded-[40px]'>
         {/* left side */}
         <div className='sm:w-[60%] h-[60%] p-1 rounded-3xl '> 
             <div className='w-full relative'>

@@ -36,12 +36,16 @@ export const AboutUs_carousel = () => {
       opts={{
         align: "center",
       }}
-      className="w-full h-full"
+      className="w-fit h-full"
     >
-      <CarouselContent className='rounded-3xl '>
+
+<CarouselPrevious className='absolute left-8 bg-black z-50 top-1/2 translate-y-1/2' />
+<CarouselNext className='absolute right-8 bg-black z-50 top-1/2 translate-y-1/2' />
+      <CarouselContent className='rounded-3xl pl-8'>
       <CarouselItem  className="md:basis-1/2 lg:basis-1/4 min-w-fit p-0 rounded-3xl overflow-hidden  bg-black">
-            <div className="w-[610px] overflow-hidden ">
+            <div className="w-[610px] h-full overflow-hidden ">
             <ReactPlayer
+            
             playing 
             controls={false}
             light={<Image width={900} height={900} src={'/asset/video.jpg'} alt={''} className=' '/>}
@@ -69,8 +73,7 @@ export const AboutUs_carousel = () => {
           </CarouselItem>
      
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      
     </Carousel>
   )
 }

@@ -6,7 +6,7 @@ import { AboutUs_carousel } from "../Comps/aboutUs_carousel";
 
 const AboutMe = () => {
   return (
-    <div className="w-screen h-screen sm:px-8 px-2 space-y-2">
+    <div className="w-screen sm:h-screen mb-60 sm:px-8 px-2 space-y-2">
       <div className=" bg-white text-black rounded-3xl  shadow-lg h-fit">
         <div className="h-fit px-10 py-4 flex items-center gap-3 justify-between ">
           <div className="flex gap-3 ">
@@ -40,17 +40,21 @@ const AboutMe = () => {
         </div>
 
         {/* footer */}
-        <div className="flex justify-between p-0">
-          <div className=" h-full px-8  flex flex-col sm:flex-row sm:items-center gap-3  ">
-            <Image src={"/asset/img-1.svg"} alt={""} height={150} width={150} />
-            <h2 className="text-5xl sm:w-[550px]">
+        <div className="flex flex-col sm:flex-row sm:justify-between p-0  w-full">
+          <div className=" h-full p-2 sm:px-8 flex sm:flex-row sm:items-center gap-3  ">
+            <Image 
+            className="w-24"
+            src={"/asset/img-1.svg"} alt={""} height={150} width={150} />
+            <h2 className="text-3xl sm:text-4xl  sm:w-[300px]">
               Ministering Good News Through Songs
             </h2>
           </div>
-          <div className="flex  h-[151px]  mt-8 relative z-10">
+     
+
+          <div className="flex  h-[151px]  sm:mt-8 relative z-10">
             <div className="bg-white  h-full w-24 rounded-b-3xl"></div>
-            <div className="bg-black h-full w-[500px] p-8 rounded-t-[50px]">
-              <div className="p-8 bg-white rounded-[40px]">
+            <div className="bg-black h-full w-[500px] sm:p-8 p-2 rounded-t-[50px]">
+              <div className=" p-8 bg-white rounded-[40px]">
                 <h3 className="font-bold mb-2">[ Psalms 98:1-7 ]</h3>
                 <p>
                   Sing to the LORD a new song, for he has done marvelous things;
@@ -63,10 +67,10 @@ const AboutMe = () => {
             <div className="bg-black -z-[1] h-10 w-5/6 absolute bottom-0 left-1/2 transform -translate-x-1/2 px-20 rounded-t-3xl"></div>
             <div className="bg-white h-full w-24 rounded-b-3xl"></div>
           </div>
+          </div>
         </div>
       </div>
 
-    </div>
   );
 };
 

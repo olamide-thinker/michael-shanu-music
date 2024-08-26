@@ -56,8 +56,8 @@ const MusicProjects = () => {
         ))}
     
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className='absolute left-8 bg-black z-50 top-1/2 translate-y-1/2' />
+      <CarouselNext className='absolute right-8 bg-black z-50 top-1/2 translate-y-1/2' />
     </Carousel>
 
 
