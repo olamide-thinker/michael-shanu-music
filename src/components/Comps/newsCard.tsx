@@ -21,7 +21,6 @@ const NewsCard = ({image, heading, details, url}:{image:string, heading:string, 
                 </div>
             </div>
 
-
         </div>
         </div>
         <Image className='w-full h-full object-cover group-hover:scale-105 duration-1000' src={image} alt={''} height={500} width={500}/>

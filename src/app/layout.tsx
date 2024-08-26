@@ -12,7 +12,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" />
       </head>
-      <body className={`luzia LuziaBold`}>
+      <body >
      
         {children}
     
