@@ -1,0 +1,73 @@
+import React from "react";
+import { Separator } from "../ui/separator";
+import { Button } from "../ui/button";
+import Image from "next/image";
+import { AboutUs_carousel } from "../Comps/aboutUs_carousel";
+
+const AboutMe = () => {
+  return (
+    <div className="w-screen h-screen sm:px-8 px-2 space-y-2">
+      <div className=" bg-white text-black rounded-3xl  shadow-lg h-fit">
+        <div className="h-fit px-10 py-4 flex items-center gap-3 justify-between ">
+          <div className="flex gap-3 ">
+            <h2 className="font-bold"> About Me</h2>
+            <Separator
+              orientation="vertical"
+              className=" h-[40px] opacity-30"
+            />
+            <p className="max-w-[460px]  text-sm leading-tight -tracking-tighter">
+              Sing to the LORD a new song, for he has done marvelous things; his
+              right and his holy arm have worked salvation for him
+            </p>
+          </div>
+          <div className=" space-x-2 hidden sm:flex">
+            <Button size={"icon"} className=" rounded-full p-6">
+              {" "}
+              left{" "}
+            </Button>
+            <Button size={"icon"} className=" rounded-full p-6">
+              {" "}
+              right{" "}
+            </Button>
+          </div>
+        </div>
+
+        <Separator />
+
+        {/* body */}
+        <div className=" p-4 flex items-center gap-3 justify-between ">
+          <AboutUs_carousel />
+        </div>
+
+        {/* footer */}
+        <div className="flex justify-between p-0">
+          <div className=" h-full px-8  flex flex-col sm:flex-row sm:items-center gap-3  ">
+            <Image src={"/asset/img-1.svg"} alt={""} height={150} width={150} />
+            <h2 className="text-5xl sm:w-[550px]">
+              Ministering Good News Through Songs
+            </h2>
+          </div>
+          <div className="flex  h-[151px]  mt-8 relative z-10">
+            <div className="bg-white  h-full w-24 rounded-b-3xl"></div>
+            <div className="bg-black h-full w-[500px] p-8 rounded-t-[50px]">
+              <div className="p-8 bg-white rounded-[40px]">
+                <h3 className="font-bold mb-2">[ Psalms 98:1-7 ]</h3>
+                <p>
+                  Sing to the LORD a new song, for he has done marvelous things;
+                  his right hand and his holy arm have worked salvation for him.
+                  The LORD has made his salvation known and revealed his
+                  righteousness to the nations.
+                </p>
+              </div>
+            </div>
+            <div className="bg-black -z-[1] h-10 w-5/6 absolute bottom-0 left-1/2 transform -translate-x-1/2 px-20 rounded-t-3xl"></div>
+            <div className="bg-white h-full w-24 rounded-b-3xl"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  );
+};
+
+export default AboutMe;
