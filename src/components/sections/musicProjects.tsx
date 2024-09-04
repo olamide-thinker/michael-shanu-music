@@ -30,7 +30,7 @@ const albums = [
 
 const MusicProjects = () => {
   return (
-    <div className=' w-screen overflow-hidden sm:py-24 sm:px-4 p-2 space-y-4 bg-[url("/asset/img-bg-project.jpg")] object-cover bg-cover'>
+    <div className=' w-screen overflow-hidden sm:py-16 sm:px-4 p-2 space-y-4 bg-[url("/asset/img-bg-project.jpg")] object-cover bg-cover'>
          <h2 className='font-bold'>
         Music Projects
          </h2>

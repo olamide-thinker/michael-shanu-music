@@ -6,7 +6,7 @@ import { AboutUs_carousel } from "../Comps/aboutUs_carousel";
 
 const AboutMe = () => {
   return (
-    <div className="w-screen sm:h-screen mb-60 sm:px-8 px-2 space-y-2">
+    <div className="w-screen sm:h-screen mb-20 sm:px-8 px-2 space-y-2">
       <div className=" bg-white text-black rounded-3xl  shadow-lg h-fit">
         <div className="h-fit px-10 py-4 flex items-center gap-3 justify-between ">
           <div className="flex gap-3 ">

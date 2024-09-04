@@ -1,5 +1,6 @@
 import AboutMe from "@/components/sections/aboutMe";
 import Footer from "@/components/sections/footer";
+import Gallery from "@/components/sections/gallery";
 import GodBless from "@/components/sections/godBless";
 import Hero from "@/components/sections/hero";
 import MusicProjects from "@/components/sections/musicProjects";
@@ -13,6 +14,7 @@ export default function Home() {
      <AboutMe/>
      <MusicProjects/>
      <GodBless/>
+     <Gallery/>
      <Footer/>
     </main>
   );
