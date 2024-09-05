@@ -115,11 +115,7 @@ const formatTime = (time: number) => {
               }
               </ScrollArea>
             
-              <div className="w-full">
-                <p>Current Time: {formatTime(currentTime).toFixed(2)}%</p>
-                <p>Total Duration: {formatTime(duration).toFixed(2)} seconds</p>
-              </div>
-            </div>
+             </div>
             {/* Floating */}
             <div>
               <p>Listen on</p>
