@@ -1,4 +1,4 @@
-"use client"
+
 
 import "./globals.css";
 import React from "react";
@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" />
+
       </head>
       <body >
      

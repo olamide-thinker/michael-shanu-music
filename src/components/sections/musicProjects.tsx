@@ -11,10 +11,11 @@ import {
   } from "@/components/ui/carousel"
 import AlbumCoverImg from '../Comps/album_coverImg'
 import AlbumCard from '../Comps/albumCard'
+import { AudioPlayerProvider } from '../Comps/audioControl'
 
 const albums = [
   {
-  tracks:["Oro","Emmanueli","New Beginning","Ijo Ope","Amazing Feeling"],
+  tracks:["oro","Emmanueli","New Beginning","Ijo Ope","Amazing Feeling"],
   album_name: "The Journey",
   album_brief:"This is one unique body of work I have been working on for as long as I can remember; I can only thank God for the engineering of this project.Thank you as you join me on this epic musical journey 😊 and don’t forget to share! ❤️",
   album_coverImg: "/asset/album_cover/theJourney_coverImage.png",
@@ -30,8 +31,8 @@ const albums = [
 
 const MusicProjects = () => {
   return (
-    <div className=' w-screen overflow-hidden sm:py-16 sm:px-4 p-2 space-y-4 bg-[url("/asset/img-bg-project.jpg")] object-cover bg-cover'>
-         <h2 className='font-bold'>
+    <div className=' w-full h-screen overflow-hidden sm:py-16 sm:px-0 p-4  space-y-4 bg-[url("/asset/img-bg-project.jpg")] object-cover bg-cover'>
+         <h2 className='font-bold px-8'>
         Music Projects
          </h2>
 
@@ -44,20 +45,23 @@ const MusicProjects = () => {
       }}
       className="w-full"
     >
-      <CarouselContent className='rounded-3xl space-x-32'>
+      <CarouselContent className='rounded-3xl space-x-2 px-3'>
 
 
+        <AudioPlayerProvider>
       {albums.map((album,i)=>(
+
         <AlbumCard key={i} 
           tracks={album.tracks} 
           album_name={album.album_name} 
           album_brief={album.album_brief} 
           album_coverImg={album.album_coverImg}/>
         ))}
+          </AudioPlayerProvider>
     
       </CarouselContent>
-      <CarouselPrevious className='absolute left-8 bg-black z-50 top-1/2 translate-y-1/2' />
-      <CarouselNext className='absolute right-8 bg-black z-50 top-1/2 translate-y-1/2' />
+      <CarouselPrevious className='absolute left-2 text-black bg-white shadow z-50 top-1/2 translate-y-1/2' />
+      <CarouselNext className='absolute right-2  text-black bg-white shadow z-50 top-1/2 translate-y-1/2' />
     </Carousel>
 
 

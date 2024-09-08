@@ -36,28 +36,27 @@ export const AboutUs_carousel = () => {
       opts={{
         align: "center",
       }}
-      className="w-fit h-full"
+      className=" h-full m-0 p-0"
     >
 
-<CarouselPrevious className='absolute left-8 bg-black z-50 top-1/2 translate-y-1/2' />
-<CarouselNext className='absolute right-8 bg-black z-50 top-1/2 translate-y-1/2' />
-      <CarouselContent className='rounded-3xl pl-8'>
-      <CarouselItem  className="md:basis-1/2 lg:basis-1/4 min-w-fit p-0 rounded-3xl overflow-hidden  bg-black">
-            <div className="w-[610px] h-full overflow-hidden ">
+<CarouselPrevious className='absolute -left-3  text-black bg-white shadow z-50 top-1/2 translate-y-1/2' />
+<CarouselNext className='absolute -right-3  text-black bg-white shadow z-50 top-1/2 translate-y-1/2' />
+      <CarouselContent className='rounded-[30px] w-full'>
+      <CarouselItem  className="md:basis-1/2 lg:basis-1/4 max-w-screen rounded-[30px]  items-center overflow-hidden m bg-black mr-3">
+            <div className="sm:w-[650px] md:w-[650px] h-full overflow-hidden rounded-3xl">
             <ReactPlayer
-            
             playing 
             controls={false}
-            light={<Image width={900} height={900} src={'/asset/video.jpg'} alt={''} className=' '/>}
+            light={<Image width={900} height={900} src={'/asset/video.jpg'} alt={''} className=' rounded-2xl overflow-hidden h-full object-cover '/>}
             width={"100%"}
             height={"100%"}
-            url='https://www.youtube.com/watch?v=Cc70VsAS-S8' 
+            url='https://youtu.be/pqoZRWL79Bo' 
             />
             </div>
           </CarouselItem>
 
           {newsData.map((news, i)=>(
-          <CarouselItem key={i}  className="md:basis-1/2 lg:basis-1/4 max-w-[350px]">
+          <CarouselItem key={i}  className="md:basis-1/2 lg:basis-1/4 max-w-[350px] mr-3  cursor-pointer select-none p-0">
             <NewsCard 
             image={news.image}
             heading={news.heading} 
@@ -67,10 +66,11 @@ export const AboutUs_carousel = () => {
           ))
           }
 
-
-          <CarouselItem  className="md:basis-1/2 lg:basis-1/4  max-w-[350px] ">
-            <Image width={800} height={800} src={'/asset/about2.png'} alt={''}/>
-          </CarouselItem>
+{/* 
+          <CarouselItem  className="md:basis-1/2 lg:basis-1/4 max-w-[100px]  ">
+          hello
+            <Image width={800} height={800} src={'/asset/about2.png'} alt={'maxw-[100px]'}/>
+          </CarouselItem> */}
      
       </CarouselContent>
       

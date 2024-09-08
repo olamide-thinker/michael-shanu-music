@@ -6,7 +6,7 @@ import { AboutUs_carousel } from "../Comps/aboutUs_carousel";
 
 const AboutMe = () => {
   return (
-    <div className="w-screen sm:h-screen mb-20 sm:px-8 px-2 space-y-2">
+    <div className="w-screen sm:h-full mb-40 sm:mb-20 sm:px-8 px-2 space-y-2">
       <div className=" bg-white text-black rounded-3xl  shadow-lg h-fit">
         <div className="h-fit px-10 py-4 flex items-center gap-3 justify-between ">
           <div className="flex gap-3 ">
@@ -21,14 +21,20 @@ const AboutMe = () => {
             </p>
           </div>
           <div className=" space-x-2 hidden sm:flex">
+            
             <Button size={"icon"} className=" rounded-full p-6">
               {" "}
-              left{" "}
+             {" "}
             </Button>
             <Button size={"icon"} className=" rounded-full p-6">
               {" "}
-              right{" "}
+              {" "}
             </Button>
+            <Button size={"icon"} className=" rounded-full p-6">
+              {" "}
+              {" "}
+            </Button>
+     
           </div>
         </div>
 

@@ -35,13 +35,21 @@ const formatTime = (time: number) => {
 
   const playTrack = (index: number) => {
     setSongIndex(index);
-    console.log('first', songIndex)
+    // console.log('first', songIndex)
     setIsPlaying(true);
-  };
+     };
+  const pauseTrack = (index: number) => {
+    setSongIndex(index);
+    // console.log('first', songIndex)
+    setIsPlaying(false);
+     };
+
+
+    
 
   return (
-    <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
-      <div className="p-2 bg-white sm:min-w-[600px] min-w-[350px] rounded-[50px] m-1">
+    <CarouselItem className="md:basis-1/2 lg:basis-1/3 h-fit ">
+      <div className="p-2 bg-white sm:max-w-[600px] max-w-fit rounded-[50px] m-1">
         <div className="hover:bg-black/5 flex flex-col text-black sm:flex-row gap-2 sm:p-2 bg-white relative rounded-[40px]">
           {/* Left side */}
           <div className="sm:w-[60%] h-[60%] p-1 rounded-3xl">
@@ -74,6 +82,7 @@ const formatTime = (time: number) => {
                     currentSong={{ src: tracks }}
                     songIndex={songIndex}
                     album_name={album_name}
+                    playing ={isPlaying}
                     setIsPlaying={setIsPlaying}
                     setSongIndex={setSongIndex}
                     onTimeUpdate={handleTimeUpdate} // Pass the time update handler
@@ -91,19 +100,28 @@ const formatTime = (time: number) => {
                     <div className="flex realtive mt-1 w-full p-3 justify-between items-center" >
                       <p>{track?.name}</p>
                       <div className="flex items-center gap-3 justify-self-center ">
-                        <Button
+                      {isPlaying && songIndex === track.id ? (    <Button
+                          variant={'ghost'}
+                          className="rounded-full border border-border/10"
+                    
+                          onClick={() => pauseTrack(track.id)}
+                          aria-label={isPlaying && songIndex === track.id ? "Pause" : "Play"}
+                          size="icon"
+                        >
+                                <FaPause size={18} />
+                  
+                        </Button>
+                    ) : (
+                      <Button
                           variant={'ghost'}
                           className="rounded-full border border-border/10"
                           onClick={() => playTrack(track.id)}
                           aria-label={isPlaying && songIndex === track.id ? "Pause" : "Play"}
                           size="icon"
                         >
-                          {isPlaying && songIndex === track.id ? (
-                            <FaPause size={18} />
-                          ) : (
-                            <FaPlay size={18} />
-                          )}
+                                <FaPlay size={18} />
                         </Button>
+                          )}
                       </div>
                     </div>
                       {isPlaying && songIndex === track.id && <div style={{width:`${formatTime(currentTime).toFixed(2)}%`}}
@@ -119,7 +137,7 @@ const formatTime = (time: number) => {
             {/* Floating */}
             <div>
               <p>Listen on</p>
-              <div className="grid grid-cols-4 hover:scale-110 cursor-pointer transition-all ease-in rounded-2xl bg-white pl-4 p-2 shadow-md items-center">
+              <div className="grid grid-cols-4 hover:scale-110  sm:w-full w-[250px] cursor-pointer transition-all ease-in rounded-2xl sm:mx-1 mx-4 bg-white pl-4 p-2  shadow-md items-center">
                 <Icon icon="simple-icons:itunes" className="w-8 h-8" />
                 <Icon icon="hugeicons:youtube" className="w-8 h-8" />
                 <Icon icon="hugeicons:spotify" className="w-8 h-8" />

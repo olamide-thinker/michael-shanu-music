@@ -4,7 +4,11 @@ import { Button } from '../ui/button'
 
 const Hero = () => {
   return (
-    <main className='w-screen relative  bg-[url("/asset/hero_background.jpg")] h-[95vh] flex justify-center items-center bg-bottom bg-cover overflow-hidden'>
+    <main 
+    className='w-full relative bg-top bg-[url("/asset/hero_background.jpg")] h-[95vh] flex justify-center items-center bg-cover overflow-hidden '
+    style={{ backgroundPosition: '30% 80%' }} 
+    
+    >
 
       {/* Gradient overlay */}
   <Image src={'/asset/img-round-text.svg'} alt={''} height={250} width={250} 
@@ -16,7 +20,7 @@ const Hero = () => {
 
 
 <nav className="text-white text-2xl space-x-1 text-center">
-  <h2 className='text-6xl text-white'>Michael Shanu</h2>
+  <h2 className='sm:text-6xl text-5xl  text-white'>Michael Shanu</h2>
   <p className='text-2xl tracking-widest'>Music</p>
   {/* <button className='text-bold  hover:text-bolder underline-offset-4 underline'>About Me</button><span className='opacity-50'>/</span>
   <button className='text-bold  hover:text-bolder'>Music Project</button><span className='opacity-50'>/</span>
