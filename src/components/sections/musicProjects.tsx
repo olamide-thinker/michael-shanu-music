@@ -124,21 +124,21 @@ const MusicProjects = () => {
 
 
   return (
-    <div className=' w-full h-screen overflow-hidden sm:py-16 sm:px-0 p-4  space-y-4 bg-[url("/asset/img-bg-project.jpg")] object-cover bg-cover'>
+    <div className=' w-full sm:h-screen overflow-hidden sm:py-16 sm:px-0 p-4  space-y-4 bg-[url("/asset/img-bg-project.jpg")] object-cover bg-cover'>
          <h2 className='font-bold px-8'>
         Music Projects
          </h2>
 
         {/* Music Card */}
-         <div className='flex  gap-2'>
+         <div className='flex  gap-2 '>
 
          <Carousel
       opts={{
         align: "center",
       }}
-      className="w-full"
+      className="w-full h-fit"
     >
-      <CarouselContent className='rounded-3xl space-x-2 px-3'>
+      <CarouselContent className='rounded-3xl space-x-2 px-3 '>
 
 
         <AudioPlayerProvider>

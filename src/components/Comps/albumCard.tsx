@@ -49,11 +49,11 @@ const formatTime = (time: number) => {
     
 
   return (
-    <CarouselItem className="md:basis-1/2 lg:basis-1/3 h-fit ">
+    <CarouselItem className="md:basis-1/2 lg:basis-1/3 h-fit  ">
       <div className="p-2 bg-white sm:max-w-[600px] max-w-fit rounded-[50px] m-1">
         <div className="hover:bg-black/5 flex flex-col text-black sm:flex-row gap-2 sm:p-2 bg-white relative rounded-[40px]">
           {/* Left side */}
-          <div className="sm:w-[60%] h-[60%] p-1 rounded-3xl">
+          <div className="sm:w-[60%] sm:h-[60%] p-1 rounded-3xl">
             <div className="w-full relative">
               <div className="absolute -bottom-1 left-2"
               onClick={()=>{
