@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const AlbumCoverImg = ({img_path}:{img_path:string}) => {
   return (
-    <svg width="100%" height="100%" viewBox="0 0 299 238"> {/* Keep the viewBox aligned with the shape's dimensions */}
+    <svg className='w-full h-auto' width="100%" height="100%" viewBox="0 0 299 238"> {/* Keep the viewBox aligned with the shape's dimensions */}
       <clipPath id="clipPathId">
         <path
           fillRule="evenodd"
