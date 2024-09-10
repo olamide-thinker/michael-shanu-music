@@ -99,6 +99,26 @@ aspect-ratio: 1/1;
     /* 50% { transform: translateX(50%); } */
   }
   
+/* styles.css */
+@keyframes zoomOut {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+.zoom-out-animation {
+  animation: zoomOut 0.3s ease-out;
+}
+
+
+
+
   .group:hover .marquee {
     animation: marquee 10s linear infinite;
   }

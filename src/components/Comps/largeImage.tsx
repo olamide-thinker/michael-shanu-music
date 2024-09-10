@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 
-export const LargeImage = () => {
+export const LargeImage = ({img}:{img:string}) => {
   return (
     <Image 
-    className='w-[75vw] h-auto'
-    src={'/asset/video.jpg'} alt={''} width={500} height={500}/>
+    className='w-auto h-[90vh]'
+    src={img} alt={'Image'} width={1080} height={1080}/>
   )
 }

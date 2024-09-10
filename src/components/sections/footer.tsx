@@ -31,15 +31,21 @@ const Footer = () => {
             <h3>Contact us</h3>
             <div className="flex items-center gap-2">
 
-            <Button  variant={undefined} className="h-fit aspect-square w-fit rounded-full">
+            <Button 
+             onClick={()=>{window.open("https://www.instagram.com/amazingshanu/", "_blank")}}
+            variant={undefined} className="h-fit aspect-square w-fit rounded-full">
             <AiFillInstagram size={60} className="hover:scale-110 transition-all" /> 
             </Button>
            
-            <Button  variant={undefined} className="h-fit aspect-square w-fit rounded-full">
+            <Button 
+             onClick={()=>{window.open("https://www.youtube.com/channel/UCMEwOsPIx4NvSEQr7yumLRA", "_blank")}}
+            variant={undefined} className="h-fit aspect-square w-fit rounded-full">
             <AiFillYoutube size={60} className="hover:scale-110 transition-all"  />
             </Button>
 
-            <Button  variant={undefined} className="h-fit aspect-square w-fit rounded-full">
+            <Button 
+             onClick={()=>{window.open("https://x.com/AmazingSHANU", "_blank")}}
+            variant={undefined} className="h-fit aspect-square w-fit rounded-full">
             <BsTwitterX size={60} className="hover:scale-110 transition-all " />           
             </Button>
             </div>

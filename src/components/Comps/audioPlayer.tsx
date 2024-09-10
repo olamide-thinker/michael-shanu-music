@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
+import { Track } from "../sections/musicProjects";
 
 interface AudioPlayerProps {
-  currentSong?: { src: string[] };
+  currentSong?: { src: Track[] };
   songIndex: number;
   album_name: string;
   playing: boolean;
@@ -77,7 +78,8 @@ export default function AudioPlayer({
     >
       <source
         type="audio/mpeg"
-        src={`/audiofiles/${album_name.toLowerCase().split(" ").join("_")}/${currentSong?.src[songIndex].toLowerCase().split(" ").join("_")}.mp3`}
+        src={currentSong?.src[songIndex]?.url}
+        // src={`/audiofiles/${album_name.toLowerCase().split(" ").join("_")}/${currentSong?.src[songIndex].toLowerCase().split(" ").join("_")}.mp3`}
       />
       Your browser does not support the audio element.
     </audio>

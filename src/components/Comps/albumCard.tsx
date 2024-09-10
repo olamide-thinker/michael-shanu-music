@@ -9,8 +9,9 @@ import AudioPlayer from "./audioPlayer";
 import { Button } from "../ui/button";
 import { FaPause, FaPlay } from "react-icons/fa6";
 import { ScrollArea, ScrollBar } from "../ui/scroll-area";
+import { Track } from "../sections/musicProjects";
 
-const AlbumCard = ({ tracks, album_name, album_brief, album_coverImg }: { tracks: string[], album_name: string, album_brief: string, album_coverImg: string }) => {
+const AlbumCard = ({ tracks, album_name, album_brief, album_coverImg }: { tracks: Track[], album_name: string, album_brief: string, album_coverImg: string }) => {
   const [isPlaying, setIsPlaying] = React.useState(false);
   const [isReady, setIsReady] = React.useState(false);
   const [songIndex, setSongIndex] = React.useState<number>(0);
@@ -18,7 +19,7 @@ const AlbumCard = ({ tracks, album_name, album_brief, album_coverImg }: { tracks
 
 let newTracks :{name:string, id:number}[] =[]
 for(let track of tracks){
- newTracks.push({name:track , id: tracks.indexOf(track)})
+ newTracks.push({name:track.name , id: tracks.indexOf(track)})
 }
 const [duration, setDuration] = React.useState<number>(0);
   const [currentTime, setCurrentTime] = React.useState<number>(0);
@@ -135,7 +136,9 @@ const formatTime = (time: number) => {
             
              </div>
             {/* Floating */}
-            <div>
+            <div
+            onClick={()=>{if('https://ffm.to/michaelshanuthejourneyep'.includes(album_name.toLocaleLowerCase().replace(/\s+/g, "")))window.open("https://ffm.to/michaelshanuthejourneyep", "_blank")}}
+            >
               <p>Listen on</p>
               <div className="grid grid-cols-4 hover:scale-110  sm:w-full w-[250px] cursor-pointer transition-all ease-in rounded-2xl sm:mx-1 mx-4 bg-white pl-4 p-2  shadow-md items-center">
                 <Icon icon="simple-icons:itunes" className="w-8 h-8" />

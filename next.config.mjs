@@ -2,7 +2,7 @@
 const nextConfig = {
 
     images: {
-        domains: ['picsum.photos',"res.cloudinary.com" ],
+        domains: ['picsum.photos',"res.cloudinary.com", "firebasestorage.googleapis.com" ],
       },
 
 };
