@@ -53,12 +53,12 @@ const Gallery = () => {
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-8 w-full'>
       {loading
           ? Array.from({ length: 8 }).map((_, i) => (
-              <Skeleton key={i} className='w-full min-w-[300px] h-[400px]' /> // Show skeletons while loading
+              <Skeleton key={i} className='w-full min-w-[300px] h-[400px] rounded-2xl' /> // Show skeletons while loading
             ))
           : imageUrls.map((url, i) => (
           <div key={i} onClick={() => setOpenImage(url)}>
             <Image
-              className='h-[400px] object-cover hover:border-2 border-white grayscale hover:grayscale-0'
+              className='h-[400px] object-cover hover:border-2 border-white grayscale hover:grayscale-0 rounded-2xl'
               src={url} alt={`Image ${i + 1}`} width={500} height={500} />
           </div>
         ))}

@@ -126,7 +126,7 @@ const formatTime = (time: number) => {
                       </div>
                     </div>
                       {isPlaying && songIndex === track.id && <div style={{width:`${formatTime(currentTime).toFixed(2)}%`}}
-                        className={' mix-blend-exclusion bg-sky-400 absolute top-0 h-full ease-in transition-all duration-300 z-20 opacity-50'}>
+                        className={' mix-blend-exclusion bg-sky-400 absolute top-0 h-full ease-in transition-all duration-100 z-20 opacity-50'}>
                         </div>}
                     </div>
                   );
