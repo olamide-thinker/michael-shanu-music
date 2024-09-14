@@ -26,8 +26,8 @@ const router = useRouter()
 
 
 <nav className="text-white text-2xl space-x-1 text-center pt-4">
-  <h2 className='sm:text-5xl text-5xl  text-white'>Michael Shanu</h2>
-  <p className='text-sm tracking-widest'>Musician, song writer, and interior designer</p>
+  <h2 className='sm:text-5xl text-5xl font-Rokkitt  text-white'>Michael Shanu</h2>
+  <p className='text-sm tracking-widest font-Rokkitt'>Musician, song writer, and interior designer</p>
 </nav>
 <ScrollArea className='h-[65vh] px-3'>
 <p className='max-w-[460px] text-center text-white/75 leading-tight -tracking-tighter'>

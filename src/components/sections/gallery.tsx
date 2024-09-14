@@ -49,7 +49,7 @@ const Gallery = () => {
 
   return (
     <div className='p-8'>
-      <h2 className='font-bold'>Photo Gallery</h2>
+      <h2 className='font-bold font-Rokkitt text-4xl'>Photo Gallery</h2>
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-8 w-full'>
       {loading
           ? Array.from({ length: 8 }).map((_, i) => (

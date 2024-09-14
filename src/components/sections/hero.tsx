@@ -20,15 +20,11 @@ const Hero = () => {
 
 
 <nav className="text-white text-2xl space-x-1 text-center">
-  <h2 className='sm:text-6xl text-5xl  text-white'>Michael Shanu</h2>
-  <p className='text-2xl tracking-widest'>Music</p>
-  {/* <button className='text-bold  hover:text-bolder underline-offset-4 underline'>About Me</button><span className='opacity-50'>/</span>
-  <button className='text-bold  hover:text-bolder'>Music Project</button><span className='opacity-50'>/</span>
-  <button className='text-bold hover:text-bolder'>Contact</button>
-   */}
+  <h2 className='sm:text-6xl font-semibold text-5xl tracking-wide font-Rokkitt text-white'>Michael Shanu</h2>
+  <p className='text-2xl tracking-widest font-Rokkitt'>Music</p>
 </nav>
 
-<p className='max-w-[460px] text-center text-white/75 leading-tight -tracking-tighter'>
+<p className='max-w-[660px] text-center text-white/75 leading-tight -tracking-tighter'>
   Sing to the LORD a new song, for he has done marvelous things; his right and his holy arm have worked salvation for him
 </p>
         </div>

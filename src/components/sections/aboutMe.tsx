@@ -15,7 +15,7 @@ const router = useRouter()
       <div className=" bg-white text-black rounded-3xl  shadow-lg h-fit">
         <div className="h-fit px-10 py-4 flex items-center gap-3 justify-between ">
           <div className="flex gap-3 ">
-            <h2 className="font-bold"> About Me</h2>
+            <h2 className="font-bold font-Rokkitt text-4xl"> About Me</h2>
             <Separator
               orientation="vertical"
               className=" h-[40px] opacity-30"
@@ -29,7 +29,7 @@ const router = useRouter()
           <div className=" space-x-2 hidden sm:flex">
 
           <Button
-          className="bg-black text-white rounded hover:bg-black/80"
+          className="bg-black text-white rounded-full hover:bg-black/80"
           onClick={()=>router.push('/biography')}
           >My Biography</Button>
 {/* 

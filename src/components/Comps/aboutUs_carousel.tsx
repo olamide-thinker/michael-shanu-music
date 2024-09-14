@@ -43,11 +43,11 @@ export const AboutUs_carousel = () => {
 <CarouselNext className='absolute -right-3  text-black bg-white shadow z-50 top-1/2 translate-y-1/2' />
       <CarouselContent className='rounded-[30px] w-full'>
       <CarouselItem  className="md:basis-1/2 lg:basis-1/4 max-w-screen rounded-[30px]  items-center overflow-hidden m bg-black mr-3">
-            <div className="sm:w-[650px] md:w-[650px] h-full overflow-hidden rounded-3xl">
+            <div className="sm:w-[650px] md:w-[650px] h-full overflow-hidden rounded-3xl group">
             <ReactPlayer
             playing 
             controls={false}
-            light={<Image width={900} height={900} src={'/asset/video.jpg'} alt={''} className=' rounded-2xl overflow-hidden h-full object-cover '/>}
+            light={<Image width={900} height={900} src={'/asset/video.jpg'} alt={''} className=' rounded-2xl overflow-hidden h-full object-cover group-hover:scale-105 duration-1000 '/>}
             width={"100%"}
             height={"100%"}
             url='https://youtu.be/pqoZRWL79Bo' 

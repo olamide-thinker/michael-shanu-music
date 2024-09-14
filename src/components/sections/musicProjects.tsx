@@ -125,7 +125,7 @@ const MusicProjects = () => {
 
   return (
     <div className=' w-full sm:h-screen overflow-hidden sm:py-16 sm:px-0 p-4  space-y-4 bg-[url("/asset/img-bg-project.jpg")] object-cover bg-cover'>
-         <h2 className='font-bold px-8'>
+         <h2 className='font-bold px-8 font-Rokkitt text-4xl'>
         Music Projects
          </h2>
 

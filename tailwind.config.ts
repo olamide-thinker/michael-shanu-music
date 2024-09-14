@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        Podkova: ["Podkova", "sans-serif"],
+        Podkova: ["Rokkitt", "sans-serif"],
       },
 
       colors: {
