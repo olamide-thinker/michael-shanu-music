@@ -1,10 +1,15 @@
+'use client'
+
 import React from "react";
 import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { AboutUs_carousel } from "../Comps/aboutUs_carousel";
+import { useRouter } from "next/navigation";
 
 const AboutMe = () => {
+const router = useRouter()
+
   return (
     <div className="w-screen sm:h-full mb-60  sm:mb-20 sm:px-8 px-2 space-y-2">
       <div className=" bg-white text-black rounded-3xl  shadow-lg h-fit">
@@ -19,9 +24,15 @@ const AboutMe = () => {
               Sing to the LORD a new song, for he has done marvelous things; his
               right and his holy arm have worked salvation for him
             </p>
+
           </div>
           <div className=" space-x-2 hidden sm:flex">
 
+          <Button
+          className="bg-black text-white rounded hover:bg-black/80"
+          onClick={()=>router.push('/biography')}
+          >My Biography</Button>
+{/* 
             <Button size={"icon"} className=" rounded-full p-6">
               {" "}
              {" "}
@@ -33,7 +44,7 @@ const AboutMe = () => {
             <Button size={"icon"} className=" rounded-full p-6">
               {" "}
               {" "}
-            </Button>
+            </Button> */}
      
           </div>
         </div>
