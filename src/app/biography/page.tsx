@@ -35,7 +35,7 @@ Michael Shanu is a visionary Nigerian music artist whose soul-stirring melodies 
 <br/><br/>
 From an early age, Michael Shanu was captivated by the way music could touch hearts and elevate minds. Influenced by the rich tapestry of Nigerian musical heritage and global spiritual traditions, Michael Shanu embarked on a journey to blend these influences into a unique sound that speaks to both the spirit and the soul.
 <br/><br/>
-With a discography that includes 3 albums and numerous singles, Michael Shanu has made a mark with songs that explore themes of faith, love, and personal growth. Each track is crafted to inspire listeners to seek holiness and build stronger, more authentic relationships with themselves and others. Songs like “Oba Nla”, “Emmanuelli”, and "Oro" are celebrated for their lyrical depth and their ability to create spaces for reflection and connection.
+With a discography that includes 3 albums and numerous singles, Michael Shanu has made a mark with songs that explore themes of faith, love, and personal growth. Each track is crafted to inspire listeners to seek holiness and build stronger, more authentic relationships with themselves and others. Songs like “Oba Nla”, “Emmanuelli”, and &quot;Oro&quot; are celebrated for their lyrical depth and their ability to create spaces for reflection and connection.
 <br/><br/>
 In addition to their musical achievements, Michael Shanu is an active advocate for community engagement and spiritual enrichment. Through workshops, live performances, and collaborations with other like-minded artists and organizations, Michael Shanu continually strives to use their platform to promote a message of love, understanding, and spiritual upliftment.
 <br/><br/>
