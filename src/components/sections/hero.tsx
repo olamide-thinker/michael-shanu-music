@@ -24,9 +24,9 @@ const Hero = () => {
   <p className='text-2xl tracking-widest font-Rokkitt'>Music</p>
 </nav>
 
-<p className='max-w-[660px] text-center text-white/75 leading-tight -tracking-tighter'>
+{/* <p className='max-w-[660px] text-center text-white/75 leading-tight -tracking-tighter'>
   Sing to the LORD a new song, for he has done marvelous things; his right and his holy arm have worked salvation for him
-</p>
+</p> */}
         </div>
     </main>
   )

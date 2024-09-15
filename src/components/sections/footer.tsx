@@ -15,11 +15,10 @@ const Footer = () => {
         <div className="flex  gap-4 pb-4 justify-between items-center w-full flex-col sm:flex-row">
           {/* left side */}
           <div className="sm:w-[500px] space-y-4">
-            <h2 className="text-[35px] font-bold">Ministering Good News Through Songs</h2>
+            <h2 className="text-[35px] font-bold">Thank you!</h2>
             <p>
               {" "}
-              Sing to the LORD a new song, for he has done marvelous things; his
-              right and his holy arm have worked salvation for him
+              You can follow, like and share my content via your social media. God bless you as you do so.
             </p>
             <p className="text-xs w-full absolute bottom-2  ">
               All rights reserved © Michael Shanu 2024

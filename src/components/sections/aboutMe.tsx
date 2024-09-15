@@ -21,8 +21,7 @@ const router = useRouter()
               className=" h-[40px] opacity-30"
             />
             <p className="max-w-[460px]  text-sm leading-tight -tracking-tighter">
-              Sing to the LORD a new song, for he has done marvelous things; his
-              right and his holy arm have worked salvation for him
+            An humble Gospel musician, <br/> song writer, and interior designer
             </p>
 
           </div>
@@ -63,7 +62,7 @@ const router = useRouter()
             className="w-24"
             src={"/asset/img-1.svg"} alt={""} height={150} width={150} />
             <h2 className="text-3xl sm:text-4xl  sm:w-[300px]">
-              Ministering Good News Through Songs
+            Sharing The Good News Through Songs.
             </h2>
           </div>
      
